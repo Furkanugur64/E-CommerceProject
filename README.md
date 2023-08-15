@@ -2,8 +2,7 @@
 
  
  Bu proje, Çasgem tarafından düzenlenen eğitmenliğini [Murat YÜCEDAĞ](https://www.udemy.com/user/murat-yucedag-3/) hocamızın yaptığı Full Stack .Net Development eğitimi kapsamında yapılmıştır.
-Projede kaggle üzerinden bulduğumuz 4.3 milyon veri bulunan veritabanından Dapper ve Ado.Net yöntemlerini kullanarak istatistikleri çektik ve arama işlemi gerçekleştirdik. Bu işlemlerin daha hızlı gerçekleşebilmesi için sql tarafında
-indeksleme kullandık.
+Proje 3 kişi ile TFS kullanılarak geliştirilmiştir. Kullanıcı tarafında dinamikliği sağlayabilmek için ajax kullanılmıştır. Kullanıcı giriş yapıp bilgilerini güncelleme , siparişlerini görüntüleme ve alışveriş yapma işlemlerini gerçekleştirebilmektedir. Admin tarafında tüm veriler yönetilebilmektedir. Sipariş verilen ürün trigger yardımıyla veritabanında sayısı güncellenmiştir.
 
  ## Proje içi Görseller 
  ------------
