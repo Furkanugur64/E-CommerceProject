@@ -1,0 +1,72 @@
+﻿
+@model List<EntityLayer.Concrete.Category>
+@{
+    Layout = null;
+}
+
+<div>
+    <h2>Kategoriler, Markalar ve Ürünler</h2>
+    <ul>
+        @foreach (var category in Model)
+        {
+            <li>
+                <strong>@category.CategoryName:</strong>
+                <select class="brand-list" data-categoryid="@category.CategoryID">
+                    <option value="">Marka Seçin</option>
+                    @foreach (var brand in category.Brands)
+                    {
+                        <option value="@brand.BrandID">@brand.BrandName</option>
+                    }
+                </select>
+                <ul class="product-list" data-categoryid="@category.CategoryID" style="display:none;"></ul>
+            </li>
+        }
+    </ul>
+</div>
+
+@section scripts {
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".brand-list").on("change", function () {
+                var selectedCategoryId = $(this).data("categoryid");
+                var selectedBrandId = $(this).val();
+
+                $.ajax({
+                    url: "/Category/GetBrandsForCategory",
+                    type: "GET",
+                    data: {
+                        categoryId: selectedCategoryId
+                    },
+                    dataType: "json",
+                    success: function (brands) {
+                        var brandSelect = $(".brand-list[data-categoryid='" + selectedCategoryId + "']");
+                        var productUl = $(".product-list[data-categoryid='" + selectedCategoryId + "']");
+
+                        brandSelect.empty().append("<option value=''>Marka Seçin</option>");
+                        productUl.empty();
+
+                        $.each(brands, function (index, brand) {
+                            brandSelect.append("<option value='" + brand.BrandID + "'>" + brand.BrandName + "</option>");
+                        });
+
+                        brandSelect.val(selectedBrandId);
+
+                        if (selectedBrandId !== "") {
+                            productUl.empty();
+                            var selectedBrand = brands.find(function (brand) {
+                                return brand.BrandID == selectedBrandId;
+                            });
+                            $.each(selectedBrand.Products, function (index, product) {
+                                productUl.append("<li>" + product.ProductName + "</li>");
+                            });
+                            productUl.show();
+                        } else {
+                            productUl.hide();
+                        }
+                    }
+                });
+            });
+        });
+    </script>
+}

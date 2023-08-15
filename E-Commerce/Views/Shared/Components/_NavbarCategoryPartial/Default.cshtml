@@ -1,0 +1,15 @@
+﻿@model List<EntityLayer.Concrete.Category>
+@{
+    Layout = null;
+}
+
+<div class="navbar-nav w-100">
+    @foreach (var item in Model)
+    {
+        <a href="/Product/ProductList/@item.CategoryID" class="nav-item nav-link">@item.CategoryName</a>
+    }
+    
+    
+
+</div>
+

@@ -1,0 +1,49 @@
+﻿@model EntityLayer.Concrete.Comment
+@{
+    ViewData["Title"] = "Yorum Detayı";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-8 offset-md-2  mt-4">
+            <div class="card">
+                <div class="card-header bg-dark text-white text-center">
+                    <h3 class="mb-0">YORUM DETAYI</h3>
+                </div>
+                <div class="card-body">
+                    <dl class="row">
+                        <div class="col-sm-12">
+                            <dt class="font-weight-bold">Yorum Tarihi:</dt>
+                            <dd>@Convert.ToDateTime(Model.CommentDate).ToString("dd/MM/yyyy")</dd>
+                        </div>
+
+                        <div class="col-sm-12">
+                            <dt class="font-weight-bold">Kullanıcı:</dt>
+                            <dd>@Model.User.Name</dd>
+                        </div>
+
+                        <div class="col-sm-12">
+                            <dt class="font-weight-bold">Ürün:</dt>
+                            <dd>@Model.Product.ProductName</dd>
+                        </div>
+
+                        <div class="col-sm-12">
+                            <dt class="font-weight-bold">İçerik:</dt>
+                            <dd>@Model.Content</dd>
+                        </div>
+
+                        <div class="col-sm-12">
+                            <dt class="font-weight-bold">Durum:</dt>
+                            <dd>@((Model.Status ? "Aktif" : "Pasif").ToUpper())</dd>
+                        </div>
+                    </dl>
+                </div>
+                <div class="card-footer text-center">
+                    <a class="btn btn-outline-danger mx-2" href="/Yonetim/Comment/DeleteComment/@Model.CommentID">Yorumu Sil</a>
+                    <a class="btn btn-outline-primary mx-2" href="/Yonetim/Comment/Index/">Yorumlar Listesi</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

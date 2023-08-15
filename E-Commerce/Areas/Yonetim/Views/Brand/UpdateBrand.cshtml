@@ -1,0 +1,25 @@
+﻿@model EntityLayer.Concrete.Brand
+@{
+    ViewData["Title"] = "UpdateBrand";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+
+<div class="container">
+
+    <h1 style="text-align:center">Marka Güncelleme Sayfası</h1>
+
+    <form method="post">
+        <input type="hidden" name="BrandID" value="@Model.BrandID" />
+
+
+        @Html.Label("Kategori")
+        @Html.DropDownListFor(x => x.CategoryID, (List<SelectListItem>)ViewBag.categoryVlc, new { @class = "form-control" })
+        <br />
+        <label>Marka Adı</label>
+        <input value="@Model.BrandName" class="form-control" name="BrandName" />
+        <br />
+        <button class="btn btn-primary">Güncelle</button>
+    </form>
+
+</div>

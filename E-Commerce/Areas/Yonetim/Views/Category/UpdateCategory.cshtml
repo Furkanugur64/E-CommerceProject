@@ -1,0 +1,26 @@
+﻿@model EntityLayer.Concrete.Category
+@{
+    ViewData["Title"] = "UpdateCategory";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<link href="~/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+
+<h1 style="text-align:center">Kategori Güncelleme Sayfası</h1>
+<div class="container">
+
+    <form method="post">
+        <input type="hidden" name="CategoryID" value="@Model.CategoryID" />
+
+        <label>Kategori Adı</label>
+        <input value="@Model.CategoryName" name="CategoryName" class="form-control" />
+        <br>
+        <label>Kategori Fotoğrafı</label>
+        <input value="@Model.CategoryImage" name="CategoryImage" class="form-control" />
+        <br>
+        <button class="btn btn-outline-primary">Güncelle</button>
+    </form>
+
+
+</div>

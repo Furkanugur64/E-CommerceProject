@@ -1,0 +1,64 @@
+﻿
+@{
+    Layout = null;
+}
+
+<div class="container-fluid mb-3">
+    <div class="row px-xl-5">
+        <div class="col-lg-8">
+            <div id="header-carousel" class="carousel slide carousel-fade mb-30 mb-lg-0" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#header-carousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#header-carousel" data-slide-to="1"></li>
+                    <li data-target="#header-carousel" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item position-relative active" style="height: 430px;">
+                        <img class="position-absolute w-100 h-100" src="/template/img/phonebanner.png" style="object-fit: cover;">
+                        <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                            <div class="p-3" style="max-width: 700px;">
+                                <h1 class="display-4 text-white mb-3 animate__animated animate__fadeInDown">Telefon</h1>
+                                <p class="mx-md-5 px-5 animate__animated animate__bounceIn">Hayalindeki Telefona Kavuş</p>
+                                <a class="btn btn-outline-light py-2 px-4 mt-3 animate__animated animate__fadeInUp" href="/Product/ProductList/7">Hemen Al</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item position-relative" style="height: 430px;">
+                        <img class="position-absolute w-100 h-100" src="/template/img/laptop.jpeg" style="object-fit: cover;">
+                        <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                            <div class="p-3" style="max-width: 700px;">
+                                <h1 class="display-4 text-white mb-3 animate__animated animate__fadeInDown">Bilgisayar</h1>
+                                <p class="mx-md-5 px-5 animate__animated animate__bounceIn">Oyun Canavarlarına Süper Güçlü Bilgisayarlar Bir Tık Uzağında</p>
+                                <a class="btn btn-outline-light py-2 px-4 mt-3 animate__animated animate__fadeInUp" href="/Product/ProductList/6">Hemen Al</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item position-relative" style="height: 430px;">
+                        <img class="position-absolute w-100 h-100" src="/template/img/monitor.jpg" style="object-fit: cover;">
+                        <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                            <div class="p-3" style="max-width: 700px;">
+                                <h1 class="display-4 text-white mb-3 animate__animated animate__fadeInDown">Monitör</h1>
+                                <p class="mx-md-5 px-5 animate__animated animate__bounceIn">Görüntünün Sınırlarını Zorlayın: Kristal Netliğinde Görüntü Kalitesiyle Tanışın</p>
+                                <a class="btn btn-outline-light py-2 px-4 mt-3 animate__animated animate__fadeInUp" href="/Product/ProductList/8">Hemen Al</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4">
+            <div class="product-offer mb-30" style="height: 200px;">
+                <img class="img-fluid" src="https://media.giphy.com/media/VGszMsb3b6wMHPRs5S/giphy.gif" alt="">
+                <div class="offer-text">
+                    <h3 class="text-uppercase" style="color: #FFD333">Günün Kuponu</h3>
+                    <h2 id="txtcouponcode" class="text-white mb-3">@ViewBag.Coupon</h2>
+                    <a id="BtnCopy" class="fa fa-copy fa-2x"></a>
+                </div>
+            </div>
+            <div class="product-offer mb-30" style="height: 200px;">
+                <img class="img-fluid" src="/template/img/cargo.jpg" alt="">
+                
+            </div>
+        </div>
+    </div>
+</div>

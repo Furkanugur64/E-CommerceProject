@@ -1,0 +1,49 @@
+﻿@model List<EntityLayer.Concrete.Comment>
+@{
+    ViewData["Title"] = "Yorum Listesi";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+    int count = 0;
+}
+
+<link href="~/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+<div class="container">
+    <br />
+    <h2 class="text-center mb-4">Yorum Listesi</h2>
+    <table class="table table-bordered table-hover">
+        <thead class="thead-dark">
+            <tr>
+                <th>Yorum ID</th>
+                <th>Yorum Tarihi</th>
+                <th>İçerik</th>
+                @*                <th>Kullanıcı ID</th>
+                *@
+                <th>Kullanıcı Adı</th>
+                @*                <th>Ürün ID</th>
+                *@
+                <th>Ürün Adı</th>
+                <th>Durum</th>
+                <th>Detay</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var comment in Model)
+            {
+                count++;
+                <tr>
+                    <td>@count</td>
+                    <td>@Convert.ToDateTime(comment.CommentDate).ToString("dd/MM/yyyy")</td>
+                    <td>@comment.Content</td>
+                    @*                    <td>@comment.UserID</td>
+                *@
+                    <td>@comment.User.UserName</td>
+                    @*                    <td>@comment.ProductID</td>
+                *@
+                    <td>@comment.Product.ProductName</td>
+                    <td>@(comment.Status ? "Aktif" : "Pasif")</td>
+                    <td> <a class="btn btn-outline-primary" href="/Yonetim/Comment/DetailComment/@comment.CommentID">Detaylar</a></td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

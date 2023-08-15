@@ -1,0 +1,37 @@
+﻿@model List<EntityLayer.Concrete.Brand>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<link href="~/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+<div class="container">
+    <br />
+    <h2 class="text-center mb-4">Marka Listesi</h2>
+
+    <table class="table table-bordered table-hover">
+        <thead class="thead-dark">
+            <tr>
+                <th>#</th>
+                <th>Marka Adı</th>
+                <th>Kategorisi</th>
+                <th>Sil</th>
+                <th>Güncelle</th>
+            </tr>
+        </thead>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.BrandID</td>
+                <td>@item.BrandName</td>
+                <td>@item.Category.CategoryName</td>
+                <td><a href="/Yonetim/Brand/DeleteBrand/@item.BrandID" class="btn btn-outline-danger">Sil</a></td>
+                <td><a href="/Yonetim/Brand/UpdateBrand/@item.BrandID" class="btn btn-outline-success">Güncelle</a></td>
+            </tr>
+        }
+    </table>
+    <a href="/Yonetim/Brand/AddBrand" class="btn btn-outline-primary">Yeni Marka Girişi</a>
+    <br />
+    <br />
+</div>

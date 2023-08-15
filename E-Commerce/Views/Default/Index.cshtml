@@ -1,0 +1,26 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_MainLayout.cshtml";
+}
+
+<!-- Carousel Start-->
+@await Component.InvokeAsync("_MainCarouselPartial")
+<!-- Carousel End -->
+
+<!-- Featured Start -->
+@await Component.InvokeAsync("_MainFeaturedPartial")
+<!-- Featured End -->
+
+<!-- Categories Start -->
+@await Component.InvokeAsync("_MainCategoryPartial")
+<!-- Categories End -->
+
+<!-- Products Start -->
+@await Component.InvokeAsync("_MainProductPartial")
+<!-- Products End -->
+
+<!-- Vendor Start -->
+@await Component.InvokeAsync("_MainVendorPartial")
+<!-- Vendor End -->
+

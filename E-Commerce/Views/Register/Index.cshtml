@@ -1,0 +1,28 @@
+﻿@model EntityLayer.Concrete.User
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_RegisterLoginLayout.cshtml";
+}
+<div class="w3layouts-main">
+    <h2><span>Kayıt Ol</span></h2>
+    <form action="#" method="post">
+        <input placeholder="Ad" name="Name" type="text" required="">
+        <input placeholder="Soyad" name="Surname" type="text" required="">
+        <input placeholder="Kullanıcı Adı" name="UserName" type="text" required="">
+        <input placeholder="Telefon Numarası" name="PhoneNumber" type="text" required="">
+        <input placeholder="Email" name="Mail" type="Email" required="">
+        <input placeholder="Şifre" name="Password" type="Password" id="password1" required="">
+        <input placeholder="Şifre Tekrar" name="Password" type="password" id="password2" required="">
+        <input type="submit" value="Kayıt Ol" name="login">
+    </form>
+</div>
+<div class="w3layouts-main">
+    <h3>
+        <span style="color: white;">
+            Hesabın var mı ?
+            <a href="/Login/Index/" style="color: yellow;">
+                Giriş Yap
+            </a>
+        </span>
+    </h3>
+</div>

@@ -1,0 +1,74 @@
+﻿@model EntityLayer.Concrete.Order
+@{
+    ViewData["Title"] = "DetailOrder";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Sipariş Detayı</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KJ3zcs0LTVWCBbYGm0z4n7PwCqu/3FOp8q8BwR8+7aL7O6U/pUbbh5SkiFfmJ" crossorigin="anonymous">
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+
+        .container {
+            
+            margin-bottom: 50px;
+        }
+
+        .card {
+            margin-top:50px;
+            border: none;
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            background-color: #ffffff;
+        }
+
+        .card-title {
+            font-size: 28px;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .card-text {
+            font-size: 16px;
+            color: #555;
+            margin-bottom: 10px;
+        }
+
+        .status {
+            font-weight: bold;
+            color: @(Model.Status ? "#28a745" : "#dc3545");
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Sipariş Detayı</h5>
+                        <p class="card-text"><strong>Sipariş Tarihi:</strong> @Convert.ToDateTime(Model.OrderDate).ToString("dd/MM/yyyy")</p>
+                        <p class="card-text"><strong>Kullanıcı Adı:</strong> @Model.User.Name</p>                       
+                        <p class="card-text"><strong>Ürün Adı:</strong> @Model.Product.ProductName</p>
+                        <p class="card-text"><strong>Toplam Fiyat:</strong> @Model.TotalPrice</p>
+                        <p class="card-text"><strong>Sipariş Durumu:</strong> <span class="status">@Model.OrderStatus</span></p>
+                    </div>
+                    <div class="card-footer text-center">
+                        <a href="/Yonetim/Order/DeleteOrder/@Model.OrderID" class="btn btn-danger">Sil</a>
+                        <a href="/Yonetim/Order/Index" class="btn btn-primary">Siparişler</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

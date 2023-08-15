@@ -1,0 +1,23 @@
+﻿@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_RegisterLoginLayout.cshtml";
+}
+<br />
+<div class="w3layouts-main" style="margin-top:50px">  
+    <h2><span>Giriş Yap</span></h2>
+    <form action="#" method="post">
+        <input placeholder="Kullanıcı Adı" name="UserName" type="text" required="">
+        <input placeholder="Şifre" name="Password" type="Password" required="">
+        <input type="submit" value="Giriş Yap" name="login">
+    </form>
+    <div class="w3layouts-main">
+        <h3>
+            <span style="color: white;">
+                Hesabın yok mu ?
+                <a href="/Register/Index/" style="color: yellow;">
+                    Buradan Kaydolun
+                </a>
+            </span>
+        </h3>
+    </div>
+</div>

@@ -1,0 +1,79 @@
+﻿@model EntityLayer.Concrete.User
+@{
+    ViewData["Title"] = "MyAccount";
+    Layout = "~/Views/Shared/_MainLayout.cshtml";
+}
+
+
+<!-- Breadcrumb Start -->
+<div class="container-fluid">
+    <div class="row px-xl-5">
+        <div class="col-12">
+            <nav class="breadcrumb bg-light mb-30">
+                <a class="breadcrumb-item text-dark" href="/Default/Index/">Ana Sayfa</a>
+                <span class="breadcrumb-item active">Hesabım</span>
+            </nav>
+        </div>
+    </div>
+</div>
+<!-- Breadcrumb End -->
+
+<div class="container-fluid">
+    <h2 class="section-title position-relative text-uppercase mx-xl-5 mb-4"><span class="bg-secondary pr-3">Hesap Bilgilerim</span></h2>
+    <div class="row px-xl-5">
+        <div class="col-lg-7 mb-5">
+            <div class="contact-form bg-light p-30">               
+                <form method="post">
+                    <div class="control-group">
+                        <input type="hidden" asp-for="UserID" />
+                        <label>Kullanıcı Adı</label>
+                        <input type="text" class="form-control" asp-for="UserName" placeholder="Kullanıcı Adınız"
+                               required="required" />
+                        <p class="help-block text-danger"></p>
+                    </div>
+                    <div class="control-group">
+                        <label>Email Adresi</label>
+                        <input type="text" class="form-control" asp-for="Mail" placeholder="Mail Adresiniz"
+                               required="required" />
+                        <p class="help-block text-danger"></p>
+                    </div>
+                    <div class="control-group">
+                        <label>Ad</label>
+                        <input type="text" class="form-control" asp-for="Name" placeholder="Adınız"
+                               required="required" />
+                        <p class="help-block text-danger"></p>
+                    </div>
+                    <div class="control-group">
+                        <label>Soyad</label>
+                        <input type="text" class="form-control" asp-for="Surname" placeholder="Soyadınız"
+                               required="required" />
+                        <p class="help-block text-danger"></p>
+                    </div>
+                    <div class="control-group">
+                        <label>Telefon Numarası</label>
+                        <input type="text" class="form-control" asp-for="PhoneNumber" placeholder="Telefon Numaranız"
+                               required="required" />
+                        <p class="help-block text-danger"></p>
+                    </div>
+                    <div class="control-group">
+                        <label>Şifre</label>
+                        <input type="text" class="form-control" asp-for="Password" placeholder="Şifreniz"
+                               required="required" />
+                        <p class="help-block text-danger"></p>
+                    </div>
+                   
+                    <div>
+                        <a href="/Default/Index/" class="btn btn-danger py-2 px-4">İptal</a>
+                        <button class="btn btn-primary py-2 px-4" type="submit">
+                            Güncelle
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>   
+        <div class="col-lg-5 mb-5">
+            <img src="~/Images/userimage.jpg" width="100%"/>
+        </div>
+    </div>
+</div>
+

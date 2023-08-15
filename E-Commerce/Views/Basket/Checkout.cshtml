@@ -1,0 +1,149 @@
+﻿@model List<EntityLayer.Concrete.BasketList>
+@{
+    ViewData["Title"] = "Checkout";
+    Layout = "~/Views/Shared/_MainLayout.cshtml";
+}
+<link rel="stylesheet" href="~/css/card.css">
+<!-- Breadcrumb Start -->
+<div class="container-fluid">
+    <div class="row px-xl-5">
+        <div class="col-12">
+            <nav class="breadcrumb bg-light mb-30">
+                <a class="breadcrumb-item text-dark" href="/Default/Index/">Ana Sayfa</a>
+                <a class="breadcrumb-item text-dark" href="/Product/ProductList/">Ürünler</a>
+                <span class="breadcrumb-item active">Ödeme Adımı</span>
+            </nav>
+        </div>
+    </div>
+</div>
+<!-- Breadcrumb End -->
+<!-- Checkout Start -->
+<div class="container-fluid">
+    <div class="row px-xl-5">
+        <div class="col-lg-8">
+            <h5 class="section-title position-relative text-uppercase mb-3"><span class="bg-secondary pr-3">Kredi Kartı Bilgiler</span></h5>
+            <br />
+            <div class="container">
+
+                <div class="card-container">
+
+                    <div class="front">
+                        <div class="image">
+                            <img src="~/Images/chip.png" alt="">
+                            <img src="~/Images/visa.png" alt="">
+                        </div>
+                        <div class="card-number-box">####-####-####-####</div>
+                        <div class="flexbox">
+                            <div class="box">
+                                <span>Kart Sahibi</span>
+                                <div class="card-holder-name">Adı Soyadı</div>
+                            </div>
+                            <div class="box">
+                                <span style="margin-left:18px">SKT</span>
+                                <div class="expiration">
+                                    <span class="exp-month">mm </span>/
+                                    <span class="exp-year">yy</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="back">
+                        <div class="stripe"></div>
+                        <div class="box">
+                            <span>cvv</span>
+                            <div class="cvv-box"></div>
+                            <img src="image/visa.png" alt="">
+                        </div>
+                    </div>
+
+                </div>
+
+                <form>
+                    <div class="inputBox">
+                        <span>Kart Numarası</span>
+                        <input id="cardNumber" type="text" maxlength="19" class="card-number-input">
+                    </div>
+                    <div class="inputBox">
+                        <span id="cardholder">Kart Sahibi</span>
+                        <input type="text" class="card-holder-input">
+                    </div>
+                    <div class="flexbox">
+                        <div class="inputBox">
+                            <span>AY</span>
+                            <select name="" id="" class="month-input">
+                                <option value="month" selected disabled>Ay</option>
+                                <option value="01">01</option>
+                                <option value="02">02</option>
+                                <option value="03">03</option>
+                                <option value="04">04</option>
+                                <option value="05">05</option>
+                                <option value="06">06</option>
+                                <option value="07">07</option>
+                                <option value="08">08</option>
+                                <option value="09">09</option>
+                                <option value="10">10</option>
+                                <option value="11">11</option>
+                                <option value="12">12</option>
+                            </select>
+                        </div>
+                        <div class="inputBox">
+                            <span>Yıl</span>
+                            <select name="" id="" class="year-input">
+                                <option value="year" selected disabled>Yıl</option>
+                                <option value="2021">2021</option>
+                                <option value="2022">2022</option>
+                                <option value="2023">2023</option>
+                                <option value="2024">2024</option>
+                                <option value="2025">2025</option>
+                                <option value="2026">2026</option>
+                                <option value="2027">2027</option>
+                                <option value="2028">2028</option>
+                                <option value="2029">2029</option>
+                                <option value="2030">2030</option>
+                            </select>
+                        </div>
+                        <div class="inputBox">
+                            <span>CVV</span>
+                            <input type="text" maxlength="4" class="cvv-input">
+                        </div>
+                    </div>
+                    <input  id="BtnKartOnay" value="Onayla" class="submit-btn text-center">
+                    <input type="checkbox" id="CardConfirm" style="display:none"/>
+                </form>
+
+            </div>
+        </div>
+        <div class="col-lg-4">
+            <h5 class="section-title position-relative text-uppercase mb-3"><span class="bg-secondary pr-3">Sipariş Özeti</span></h5>
+            <div class="bg-light p-30 mb-5">
+                <div class="border-bottom">                 
+                    <table class="table table-hovered">
+                        <tr>
+                            <th>Ürün Adı</th>
+                            <th>Adet</th>
+                        </tr>
+                        @foreach (var item in Model)
+                        {
+                            <tr>
+                                <td>@item.Product.ProductName</td>
+                                <td>@item.ProductCount</td>                                
+                            </tr>
+                        }                       
+                    </table>
+                </div>              
+                <div class="pt-2">
+                    <div class="d-flex justify-content-between mt-2">
+                        <h5>Toplam Fiyat</h5>
+                        <h5 id="totalPrice">@ViewBag.price</h5>
+                    </div>
+                </div>
+                <br />
+                <button id="BtnCreateOrder" class="btn btn-block btn-primary font-weight-bold py-3">Sipariş Oluştur</button>
+            </div>           
+        </div>
+    </div>
+</div>
+<!-- Checkout End -->
+<script src="~/js/deneme.js"></script>
+                        

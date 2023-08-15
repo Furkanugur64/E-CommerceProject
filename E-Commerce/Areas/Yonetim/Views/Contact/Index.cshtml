@@ -1,0 +1,59 @@
+﻿@model List<EntityLayer.Concrete.Contact>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+<link href="~/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+<!DOCTYPE html>
+<html>
+<body class="hold-transition sidebar-mini">
+    <section class="content">
+        <div class="container-fluid">
+            <div class="row">
+
+                <!-- /.col -->
+                <div class="col-md-12">
+                    <div class="card">
+                        <!-- /.card-header -->
+                        <div class="card-body">
+                            <div class="tab-pane" id="timeline">
+                                <!-- The timeline -->
+                                <div class="timeline timeline-inverse">
+                                    @foreach (var item in Model)
+                                    {
+                                        <!-- timeline time label -->
+                                        <div class="time-label">
+                                            <span class="bg-info">
+                                                @(((DateTime)item.CreatedDate).ToString("dd.MMM.yyyy"))  @*@item.Tarih detaylı tarih*@
+                                            </span>
+                                        </div>
+                                        <div>
+                                            <i class="fas fa-comments bg-warning"></i>
+                                            <div class="timeline-item">
+                                                <span class="time"><i class="far fa-clock"></i>@item.Mail</span>
+                                                <h3 class="timeline-header"><a href="#">@item.Name</a> @item.Subject</h3>
+                                                <div class="timeline-body">
+                                                    @item.Message
+                                                </div>
+                                                <div>
+                                                    <a class="btn btn-danger" href="/Yonetim/Contact/DeleteContact/@item.ContactID">Mesajı Sil</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    }
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /.tab-content -->
+                    </div><!-- /.card-body -->
+                </div>
+                <!-- /.nav-tabs-custom -->
+            </div>
+            <!-- /.col -->
+        </div>
+        <!-- /.row -->
+    </section>
+</body>
+</html>
+

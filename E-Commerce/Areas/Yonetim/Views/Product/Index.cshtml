@@ -1,0 +1,55 @@
+﻿@model List<EntityLayer.Concrete.Product>
+
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<link href="~/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+<div class="container">
+    <br />
+    <h2 class="text-center mb-4">Ürün Listesi</h2>
+    <table class="table table-bordered table-hover">
+        <thead class="thead-dark">
+            <tr>
+                <th>#</th>
+                <th>Ürün Fotoğrafı/1</th>
+                <th>Ürün Fotoğrafı/2</th>
+                <th>Ürün Adı</th>
+                <th>Kategori</th>
+                <th>Marka</th>
+                <th>Fiyat</th>                
+                <th>Stok Sayısı</th>
+                <th>Durum</th>
+                <th>Sil</th>
+                <th>Güncelle</th>
+            </tr>
+        </thead>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.ProductID</td>
+                <td>
+                    <img width="100" height="100" src="@item.ImageUrl" />
+                </td>
+                <td>
+                    <img width="100" height="100" src="@item.ImageUrl2" />
+                </td>
+                <td>@item.ProductName</td>
+                <td>@item.Category.CategoryName</td>
+                <td>@item.Brand.BrandName</td>
+                <td>@item.Price</td>
+                <td>@item.Stock</td>
+                <td>@item.Status</td>
+                <td><a href="/Yonetim/Product/DeleteProduct/@item.ProductID" class="btn btn-outline-danger">Sil</a></td>
+                <td><a href="/Yonetim/Product/UpdateProduct/@item.ProductID" class="btn btn-outline-success">Güncelle</a></td>
+            </tr>
+        }
+    </table>
+    <a href="/Yonetim/Product/AddProduct" class="btn btn-outline-primary">Yeni Ürün Girişi</a>
+    <br />
+    <br />
+    <br />
+</div>

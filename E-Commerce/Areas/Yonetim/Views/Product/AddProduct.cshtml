@@ -1,0 +1,143 @@
+﻿@model EntityLayer.Concrete.Product
+
+@{
+    ViewData["Title"] = "AddProduct";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<link href="~/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+<div class="container">
+    <h1 style="text-align:center">Ürün Ekleme Sayfası</h1>
+
+
+
+    <form method="post">
+        <div class="form-group">
+
+            @Html.Label("Ürün Adı")
+            @Html.TextBoxFor(x => x.ProductName, new { @class = "form-control" })
+            @Html.ValidationMessageFor(x => x.ProductName, null, new { @class = "text-danger" })
+            <br />
+
+
+          @Html.Label("Kategori")
+            @Html.DropDownListFor(x => x.CategoryID, (List<SelectListItem>)ViewBag.categoryVlc, new { @class = "form-control" })
+            @Html.ValidationMessageFor(x => x.CategoryID)
+            <br />
+            @Html.Label("Marka")
+            @Html.DropDownListFor(x => x.BrandID, (List<SelectListItem>)ViewBag.brandVlc, new { @class = "form-control" })
+            @Html.ValidationMessageFor(x => x.BrandID)
+            <br />
+
+
+
+            @Html.Label("Ürün Fiyatı")
+            @Html.TextBoxFor(x => x.Price, new { @class = "form-control" })
+            @Html.ValidationMessageFor(x => x.Price, null, new { @class = "text-danger" })
+            <br />
+            @Html.Label("İndirimli Ürün Fiyatı")
+            @Html.TextBoxFor(x => x.DiscountedPrice, new { @class = "form-control" })
+            @Html.ValidationMessageFor(x => x.DiscountedPrice, null, new { @class = "text-danger" })
+                 <br />
+            @Html.Label("Ürün Açıklaması")
+            @Html.TextBoxFor(x => x.Description, new { @class = "form-control" })
+            @Html.ValidationMessageFor(x => x.Description, null, new { @class = "text-danger" })
+            <br />
+            @Html.Label("Ürün Fotoğrafı - 1")
+            @Html.TextBoxFor(x => x.ImageUrl, new { @class = "form-control" })
+            @Html.ValidationMessageFor(x => x.ImageUrl, null, new { @class = "text-danger" })
+            <br />
+            @Html.Label("Ürün Fotoğrafı - 2")
+            @Html.TextBoxFor(x => x.ImageUrl2, new { @class = "form-control" })
+            @Html.ValidationMessageFor(x => x.ImageUrl2, null, new { @class = "text-danger" })
+            <br />
+            @Html.Label("Ürün Stok Sayısı")
+            @Html.TextBoxFor(x => x.Stock, new { @class = "form-control" })
+            @Html.ValidationMessageFor(x => x.Stock, null, new { @class = "text-danger" })
+            <br />
+
+         
+
+            <button type="submit" class="btn btn-info">Kaydet</button>
+       </div>
+    </form>
+    @*}*@
+</div>
+
+
+
+@*
+<div class="container">
+    <div class="row">
+        <div class="col-md-12"><p>Kategori Seçimi</p></div>
+        <div class="col-md-3">
+            <select name="caretory" id="il" class="form-control">
+                <option value="">Kategori Seçiniz...</option>
+            </select>
+        </div>
+
+        <div class="col-md-3">
+            <select name="brand" id="brand" class="form-control" disabled="disabled">
+                <option value="">Marka Seçiniz...</option>
+            </select>
+        </div>
+    </div>
+</div>
+*@
+
+@*<script>
+    categorySelect.addEventListener('change', () => {
+        const selectedCategory = categorySelect.value;
+        const brands = brandLists[selectedCategory];
+
+        // Marka listesini temizle
+        brandSelect.innerHTML = '';
+
+        // Yeni markaları ekle
+        brands.forEach(brand => {
+            const option = document.createElement('option');
+            option.text = brand;
+            brandSelect.appendChild(option);
+        });
+    });
+</script>*@
+
+@*<section>
+    $.ajax({
+        url: 'Models/category.json',
+        dataType: 'json',
+        type: 'GET',
+        data: "",
+        success: function (data) {
+            for (row in data) {
+                $('#category').append($('<option></option>').attr('value', data[row].brandID).text(data[row].brandName));
+            }
+        },
+        error: function (jqXHR, textStatus, errorThrown) {
+            alert(errorThrown);
+        }
+    });
+
+
+
+    $("#category").change(function () {
+        $("#brand").attr("disabled", false).html("<option value=''>Marka Seçiniz...</option>");
+        $.ajax({
+            url: 'Models/brand.json',
+            dataType: 'json',
+            type: 'GET',
+            data: "",
+            success: function (data) {
+                for (row in data) {
+                    if (data[row].categoryID == $("#Category").val()) {
+                        $('#brand').append($('<option></option>').attr('value', data[row].brandID).text(data[row].brandName));
+                    }
+                }
+        },
+        error: function (jqXHR, textStatus, errorThrown) {
+             alert(errorThrown);
+        }
+    });
+    })
+</section>*@

@@ -1,0 +1,23 @@
+﻿@model EntityLayer.Concrete.Admin
+@{
+    ViewData["Title"] = "AddAdmin";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<link href="~/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+
+<div class="container">
+    <br />
+    <h1 style="text-align:center">Admin Ekleme Sayfası</h1>
+
+    <form method="post">
+        <label>Kullanıcı Adı</label>
+        <input name="UserName" class="form-control" />
+        <br />
+        <label>Şifre</label>
+        <input name="Password" type="password" class="form-control" />
+        <br />
+        <button class="btn btn-outline-primary">Kaydet</button>
+    </form>
+</div>

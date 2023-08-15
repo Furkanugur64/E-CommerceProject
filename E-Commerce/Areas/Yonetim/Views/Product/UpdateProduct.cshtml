@@ -1,0 +1,50 @@
+﻿@model EntityLayer.Concrete.Product
+
+@{
+    ViewData["Title"] = "UpdateProduct";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<link href="~/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+<div class="container">
+    <h1 style="text-align:center">Ürün Güncelleme Sayfası</h1>
+
+@*    @using (Html.BeginForm("UpdateProduct", "Product", FormMethod.Post))
+    {*@
+    <form method="post">
+        <input type="hidden" name="ProductID" value="@Model.ProductID" />
+        @Html.Label("Başlık")
+        @Html.TextBoxFor(x => x.ProductName, new { @class = "form-control" })
+        <br />
+        @Html.Label("Kategori")
+        @Html.DropDownListFor(x => x.CategoryID, (List<SelectListItem>)ViewBag.categoryVlc, new { @class = "form-control" })
+        <br />
+        @Html.Label("Marka")
+        @Html.DropDownListFor(x => x.BrandID, (List<SelectListItem>)ViewBag.brandVlc, new { @class = "form-control" })
+        <br />
+        @Html.Label("Ürün Fiyatı")
+        @Html.TextBoxFor(x => x.Price, new { @class = "form-control" })
+        <br />
+        @Html.Label("İndirimli Ürün Fiyatı")
+        @Html.TextBoxFor(x => x.DiscountedPrice, new { @class = "form-control" })
+        <br />
+        @Html.Label("Kategori Açıklaması")
+        @Html.TextBoxFor(x => x.Description, new { @class = "form-control" })
+        <br />
+        @Html.Label("Ürün Fotoğraf - 1")
+        @Html.TextBoxFor(x => x.ImageUrl, new { @class = "form-control" })
+        <br />
+        @Html.Label("Ürün Fotoğraf - 2")
+        @Html.TextBoxFor(x => x.ImageUrl2, new { @class = "form-control" })
+        <br />
+        @Html.Label("Stok Sayısı")
+        @Html.TextBoxFor(x => x.Stock, new { @class = "form-control" })
+        <br />
+        @Html.Label("Ürün Durumu")
+        @Html.TextBoxFor(x => x.Status, new { @class = "form-control" })
+        <br />
+        <button class="btn btn-primary">Güncelle</button>
+    </form>
+  @*  }*@
+</div>

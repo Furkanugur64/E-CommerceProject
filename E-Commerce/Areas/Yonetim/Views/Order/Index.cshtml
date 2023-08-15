@@ -1,0 +1,58 @@
+﻿@model List<EntityLayer.Concrete.Order>
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<link href="~/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Order List</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KJ3zcs0LTVWCBbYGm0z4n7PwCqu/3FOp8q8BwR8+7aL7O6U/pUbbh5SkiFfmJ" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+        <br />
+        <h2 class="text-center mb-4">Sipariş Listesi</h2>
+        <table class="table table-bordered">
+            <thead class="thead-dark">
+                <tr>
+                    <th>Order ID</th>
+                    <th>Sipariş Tarihi</th>
+                    <th>Kullanıcı Adı</th>
+                    @*     <th>Adres</th>*@
+                    <th>Sipariş Detay</th>
+                    <th>Ürün Adı</th>
+                    <th>Toplam Fiyat</th>
+                    @*<th>Kullanıcı ID</th>
+                    <th>Ürün ID</th>*@
+                    <th>Status</th>
+                    <th>Detay</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var order in Model)
+                {
+                    <tr>
+                        <td>@order.OrderID</td>
+                        <td>@Convert.ToDateTime(order.OrderDate).ToString("dd/MM/yyyy")</td>
+                        <td>@order.User.UserName</td>
+                        @*   <td>@order.Address</td>*@
+                        <td>@order.OrderStatus</td>
+                        <td>@order.Product.ProductName</td>
+                        <td>@order.TotalPrice</td>
+                        @* <td>@order.UserID</td>
+                    <td>@order.ProductID</td>*@
+                        <td>@order.Status</td>
+                        <td><a href="/Yonetim/Order/DetailOrder/@order.OrderID" class="btn btn-outline-primary">Detaylar</a></td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

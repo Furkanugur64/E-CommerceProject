@@ -1,0 +1,25 @@
+﻿@model EntityLayer.Concrete.Admin
+@{
+    ViewData["Title"] = "UpdateAdmin";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<link href="~/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+
+<link href="~/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+<br />
+<h1 style="text-align:center">Admin Güncelleme Sayfası</h1>
+<div class="container">
+    <form method="post">
+        <input type="hidden" value="@Model.AdminID" name="AdminID" />
+
+        <label>Kullanıcı Adı</label>
+        <input value="@Model.UserName" name="UserName" class="form-control" />
+        <br>
+        <label>Şifre</label>
+        <input type="password" value="@Model.Password" name="Password" class="form-control" />
+        <br>
+        <button class="btn btn-outline-primary">Güncelle</button>
+    </form>
+</div>

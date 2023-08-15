@@ -1,0 +1,64 @@
+﻿@model List<EntityLayer.Concrete.Order>
+@{
+    ViewData["Title"] = "MyOrders";
+    Layout = "~/Views/Shared/_MainLayout.cshtml";
+    int count = 0;
+}
+
+<!-- Breadcrumb Start -->
+<div class="container-fluid">
+    <div class="row px-xl-5">
+        <div class="col-12">
+            <nav class="breadcrumb bg-light mb-30">
+                <a class="breadcrumb-item text-dark" href="/Default/Index/">Ana Sayfa</a>
+                <span class="breadcrumb-item active">Siparişlerim</span>
+            </nav>
+        </div>
+    </div>
+</div>
+<!-- Breadcrumb End -->
+
+<div class="container-fluid">
+    <h2 class="section-title position-relative text-uppercase mx-xl-5 mb-4"><span class="bg-secondary pr-3">Önceki Siparişlerim</span></h2>
+    <div class="row px-xl-5">
+        <div class="col-lg-5 mb-5">
+            <div class="contact-form bg-light p-30">
+                <img src="~/Images/order.jpg" width="100%" />
+            </div>
+        </div>
+        <div class="col-lg-7 mb-5">
+            <table class="table table-bordered">
+                <tr style="background-color:darkred; color:white">
+                    <th>#</th>
+                    <th>Ürün Adı</th>                   
+                    <th>Tarih</th>
+                    <th>Fiyat</th>
+                    <th>Adet</th>
+                    <th>Durumu</th>
+                </tr>
+                @foreach (var item in Model)
+                {
+                    count++;
+                    <tr>
+                        <td>@count</td>
+                        <td>@item.Product.ProductName</td>                       
+                        <td>@Convert.ToDateTime(item.OrderDate).ToString("dd/MM/yyyy")</td>
+                        <td>@item.TotalPrice</td>
+                        <td>@item.ProductCount</td>
+                        @if (item.OrderStatus == "Hazırlanıyor")
+                        {
+                            <td style="color:orange">@item.OrderStatus</td>
+                        }
+                        @if (item.OrderStatus == "Teslim Edildi")
+                        {
+                            <td style="color:green">@item.OrderStatus</td>
+                        }
+
+                    </tr>
+                }
+            </table>
+            <a href="/Default/Index/" class="btn btn-danger py-2 px-4">Geri</a>
+        </div>
+    </div>
+</div>
+

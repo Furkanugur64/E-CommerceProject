@@ -1,0 +1,43 @@
+﻿@model List<EntityLayer.Concrete.User>
+@{
+    ViewData["Title"] = "Kullanıcı Listesi";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<link href="~/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+<div class="container">
+    <br />
+    <h2 class="text-center mb-4">Kullanıcı Listesi</h2>
+    <table class="table table-bordered table-hover">
+        <thead class="thead-dark">
+            <tr>
+                <th>Kullanıcı ID</th>
+                <th>Kullanıcı Adı</th>
+                <th>Email</th>
+                <th>Ad</th>
+                <th>Soyad</th>
+                <th>Telefon Numarası</th>
+                <th>Durum</th>
+                <th>İşlem</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var user in Model)
+            {
+                <tr>
+                    <td>@user.UserID</td>
+                    <td>@user.UserName</td>
+                    <td>@user.Mail</td>
+                    <td>@user.Name</td>
+                    <td>@user.Surname</td>
+                    <td>@user.PhoneNumber</td>
+                    <td>@(user.Status ? "Aktif" : "Pasif")</td>
+                    <td>
+                        <a class="btn btn-danger" href="/Yonetim/User/DeleteUser/@user.UserID">Kullanıcı Sil</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

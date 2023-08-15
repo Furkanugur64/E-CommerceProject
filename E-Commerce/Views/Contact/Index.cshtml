@@ -1,0 +1,68 @@
+﻿@model EntityLayer.Concrete.Contact
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_MainLayout.cshtml";
+}
+
+
+<div class="container-fluid">
+    <div class="row px-xl-5">
+        <div class="col-12">
+            <nav class="breadcrumb bg-light mb-30">
+                <a class="breadcrumb-item text-dark" href="#">Ana Sayfa</a>
+                <span class="breadcrumb-item active">İletişim</span>
+            </nav>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid">
+    <h2 class="section-title position-relative text-uppercase mx-xl-5 mb-4"><span class="bg-secondary pr-3">İletişim</span></h2>
+    <div class="row px-xl-5">
+        <div class="col-lg-7 mb-5">
+            <div class="contact-form bg-light p-30">
+                @using (Html.BeginForm("AddContact", "Contact", FormMethod.Post, new { id = "FrmContact" }))
+                {
+                    <div class="control-group">
+                        <input type="text" class="form-control" id="name" name="Name" placeholder="Adınız"
+                               required="required" />
+                        <p class="help-block text-danger"></p>
+                    </div>
+                    <div class="control-group">
+                        <input type="email" class="form-control" id="mail" name="Mail" placeholder="Mail Adresiniz"
+                               required="required" />
+                        <p class="help-block text-danger"></p>
+                    </div>
+                    <div class="control-group">
+                        <input type="text" class="form-control" id="subject"  name="Subject" placeholder="Konu"
+                               required="required"  />
+                        <p class="help-block text-danger"></p>
+                    </div>
+                    <div class="control-group">
+                        <textarea class="form-control" rows="8" id="message" name="Message" placeholder="Mesaj"
+                                  required="required"
+                                  ></textarea>
+                        <p class="help-block text-danger"></p>
+                    </div>
+                    <div>
+                        <a class="btn btn-primary py-2 px-4" id="sendMessageButton">
+                            Gönder
+                        </a>
+                    </div>
+                }
+
+            </div>
+        </div>
+        <div class="col-lg-5 mb-5">
+            <div class="bg-light p-30 mb-30">
+                <iframe style="width: 100%; height: 250px;"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6119.648560402154!2d32.84680067663656!3d39.922948417702116!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14d34effd6b9930b%3A0x6fa79cbeeeec0bac!2zS8SxesSxbGF5LCAwNjQyMCDDh2Fua2F5YS9BbmthcmE!5e0!3m2!1str!2str!4v1690643672516!5m2!1str!2str" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            </div>
+            <div class="bg-light p-30 mb-3">
+                <p class="mb-2"><i class="fa fa-map-marker-alt text-primary mr-3"></i>Ankara - Kızılay</p>
+                <p class="mb-2"><i class="fa fa-envelope text-primary mr-3"></i>Eticater@example.com</p>
+                <p class="mb-2"><i class="fa fa-phone-alt text-primary mr-3"></i>+090 555 555 55 55</p>
+            </div>
+        </div>
+    </div>
+</div>

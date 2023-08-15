@@ -1,0 +1,213 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = E_Commerce
+build_property.RootNamespace = E_Commerce
+build_property.ProjectDir = C:\Users\Furka\source\repos\E-CommerceProject\E-Commerce\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\Furka\source\repos\E-CommerceProject\E-Commerce
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/Furka/source/repos/E-CommerceProject/E-Commerce/Areas/Yonetim/Views/Admin/AddAdmin.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcWW9uZXRpbVxWaWV3c1xBZG1pblxBZGRBZG1pbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Furka/source/repos/E-CommerceProject/E-Commerce/Areas/Yonetim/Views/Admin/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcWW9uZXRpbVxWaWV3c1xBZG1pblxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Furka/source/repos/E-CommerceProject/E-Commerce/Areas/Yonetim/Views/Admin/UpdateAdmin.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcWW9uZXRpbVxWaWV3c1xBZG1pblxVcGRhdGVBZG1pbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Furka/source/repos/E-CommerceProject/E-Commerce/Areas/Yonetim/Views/Brand/AddBrand.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcWW9uZXRpbVxWaWV3c1xCcmFuZFxBZGRCcmFuZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Furka/source/repos/E-CommerceProject/E-Commerce/Areas/Yonetim/Views/Brand/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcWW9uZXRpbVxWaWV3c1xCcmFuZFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Furka/source/repos/E-CommerceProject/E-Commerce/Areas/Yonetim/Views/Brand/UpdateBrand.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcWW9uZXRpbVxWaWV3c1xCcmFuZFxVcGRhdGVCcmFuZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Furka/source/repos/E-CommerceProject/E-Commerce/Areas/Yonetim/Views/CategoryBrand/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcWW9uZXRpbVxWaWV3c1xDYXRlZ29yeUJyYW5kXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Furka/source/repos/E-CommerceProject/E-Commerce/Areas/Yonetim/Views/Category/AddCategory.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcWW9uZXRpbVxWaWV3c1xDYXRlZ29yeVxBZGRDYXRlZ29yeS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Furka/source/repos/E-CommerceProject/E-Commerce/Areas/Yonetim/Views/Category/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcWW9uZXRpbVxWaWV3c1xDYXRlZ29yeVxEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Furka/source/repos/E-CommerceProject/E-Commerce/Areas/Yonetim/Views/Category/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcWW9uZXRpbVxWaWV3c1xDYXRlZ29yeVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Furka/source/repos/E-CommerceProject/E-Commerce/Areas/Yonetim/Views/Category/UpdateCategory.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcWW9uZXRpbVxWaWV3c1xDYXRlZ29yeVxVcGRhdGVDYXRlZ29yeS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Furka/source/repos/E-CommerceProject/E-Commerce/Areas/Yonetim/Views/Comment/DetailComment.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcWW9uZXRpbVxWaWV3c1xDb21tZW50XERldGFpbENvbW1lbnQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Furka/source/repos/E-CommerceProject/E-Commerce/Areas/Yonetim/Views/Comment/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcWW9uZXRpbVxWaWV3c1xDb21tZW50XEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Furka/source/repos/E-CommerceProject/E-Commerce/Areas/Yonetim/Views/Contact/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcWW9uZXRpbVxWaWV3c1xDb250YWN0XEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Furka/source/repos/E-CommerceProject/E-Commerce/Areas/Yonetim/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcWW9uZXRpbVxWaWV3c1xIb21lXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Furka/source/repos/E-CommerceProject/E-Commerce/Areas/Yonetim/Views/Login/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcWW9uZXRpbVxWaWV3c1xMb2dpblxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Furka/source/repos/E-CommerceProject/E-Commerce/Areas/Yonetim/Views/Order/DetailOrder.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcWW9uZXRpbVxWaWV3c1xPcmRlclxEZXRhaWxPcmRlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Furka/source/repos/E-CommerceProject/E-Commerce/Areas/Yonetim/Views/Order/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcWW9uZXRpbVxWaWV3c1xPcmRlclxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Furka/source/repos/E-CommerceProject/E-Commerce/Areas/Yonetim/Views/Product/AddProduct.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcWW9uZXRpbVxWaWV3c1xQcm9kdWN0XEFkZFByb2R1Y3QuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Furka/source/repos/E-CommerceProject/E-Commerce/Areas/Yonetim/Views/Product/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcWW9uZXRpbVxWaWV3c1xQcm9kdWN0XEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Furka/source/repos/E-CommerceProject/E-Commerce/Areas/Yonetim/Views/Product/UpdateProduct.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcWW9uZXRpbVxWaWV3c1xQcm9kdWN0XFVwZGF0ZVByb2R1Y3QuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Furka/source/repos/E-CommerceProject/E-Commerce/Areas/Yonetim/Views/Statistics/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcWW9uZXRpbVxWaWV3c1xTdGF0aXN0aWNzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Furka/source/repos/E-CommerceProject/E-Commerce/Areas/Yonetim/Views/User/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcWW9uZXRpbVxWaWV3c1xVc2VyXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Furka/source/repos/E-CommerceProject/E-Commerce/Views/Basket/Checkout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmFza2V0XENoZWNrb3V0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Furka/source/repos/E-CommerceProject/E-Commerce/Views/Basket/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmFza2V0XEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Furka/source/repos/E-CommerceProject/E-Commerce/Views/Contact/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29udGFjdFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Furka/source/repos/E-CommerceProject/E-Commerce/Views/Default/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVmYXVsdFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Furka/source/repos/E-CommerceProject/E-Commerce/Views/Login/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5cSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Furka/source/repos/E-CommerceProject/E-Commerce/Views/Product/ProductDetails.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxQcm9kdWN0RGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Furka/source/repos/E-CommerceProject/E-Commerce/Views/Product/ProductList.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxQcm9kdWN0TGlzdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Furka/source/repos/E-CommerceProject/E-Commerce/Views/Register/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVnaXN0ZXJcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Furka/source/repos/E-CommerceProject/E-Commerce/Views/Shared/Components/_MainBasketCount/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcX01haW5CYXNrZXRDb3VudFxEZWZhdWx0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Furka/source/repos/E-CommerceProject/E-Commerce/Views/Shared/Components/_MainCarouselPartial/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcX01haW5DYXJvdXNlbFBhcnRpYWxcRGVmYXVsdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Furka/source/repos/E-CommerceProject/E-Commerce/Views/Shared/Components/_MainCategoryPartial/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcX01haW5DYXRlZ29yeVBhcnRpYWxcRGVmYXVsdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Furka/source/repos/E-CommerceProject/E-Commerce/Views/Shared/Components/_MainFeaturedPartial/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcX01haW5GZWF0dXJlZFBhcnRpYWxcRGVmYXVsdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Furka/source/repos/E-CommerceProject/E-Commerce/Views/Shared/Components/_MainOfferPartial/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcX01haW5PZmZlclBhcnRpYWxcRGVmYXVsdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Furka/source/repos/E-CommerceProject/E-Commerce/Views/Shared/Components/_MainProductPartial/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcX01haW5Qcm9kdWN0UGFydGlhbFxEZWZhdWx0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Furka/source/repos/E-CommerceProject/E-Commerce/Views/Shared/Components/_MainVendorPartial/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcX01haW5WZW5kb3JQYXJ0aWFsXERlZmF1bHQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Furka/source/repos/E-CommerceProject/E-Commerce/Views/Shared/Components/_NavbarCategoryPartial/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcX05hdmJhckNhdGVnb3J5UGFydGlhbFxEZWZhdWx0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Furka/source/repos/E-CommerceProject/E-Commerce/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Furka/source/repos/E-CommerceProject/E-Commerce/Views/Shared/_AdminLayout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9BZG1pbkxheW91dC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Furka/source/repos/E-CommerceProject/E-Commerce/Views/Shared/_MainLayout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9NYWluTGF5b3V0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Furka/source/repos/E-CommerceProject/E-Commerce/Views/Shared/_RegisterLoginLayout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9SZWdpc3RlckxvZ2luTGF5b3V0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Furka/source/repos/E-CommerceProject/E-Commerce/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Furka/source/repos/E-CommerceProject/E-Commerce/Views/User/MyAccount.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxNeUFjY291bnQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Furka/source/repos/E-CommerceProject/E-Commerce/Views/User/MyOrders.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxNeU9yZGVycy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Furka/source/repos/E-CommerceProject/E-Commerce/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Furka/source/repos/E-CommerceProject/E-Commerce/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Furka/source/repos/E-CommerceProject/E-Commerce/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-4yuo1jszy4
