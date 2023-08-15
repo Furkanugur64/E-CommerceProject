@@ -12,8 +12,8 @@ namespace DataAccessLayer.Concrete
     {
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-             //Uzak Bağlantı
-             optionsBuilder.UseSqlServer("Data Source=ecommercecasgem.database.windows.net;initial catalog=ECommerceDataBase; User ID=admindb;Password=Ab12cd34.;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;");
+             
+             
 
             //Locale
             //optionsBuilder.UseSqlServer("Data Source=FRKN\\SQLEXPRESS;initial catalog=ECommerceDataBase; integrated Security=true");
